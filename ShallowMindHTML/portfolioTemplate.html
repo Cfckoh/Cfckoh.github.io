@@ -1,0 +1,140 @@
+<!--Credit to https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp for template-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+</style>
+</head>
+<body>
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<img src="ShallowMind.png" alt="Shallow Mind Logo"style="width:20%" class="center"> 
+<h1>Shallow Mind</h1>
+<p>Welcome to Shallow Mind! <a href="https://deepmind.com/">Deepmind's</a> oft overlooked counterpart. 
+Meanwhile the folks at google’s Deepmind are beating <a href="https://deepmind.com/research/case-studies/alphago-the-story-so-far">Go</a> grandmasters and 
+near superhuman <a href="https://deepmind.com/blog/article/alphastar-mastering-real-time-strategy-game-starcraft-ii">Starcraft</a> pros, 
+we use thousands of cpu hours to win the card game war a WHOPPING 50% of the time!!! Rather than predicting <a href="https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology">protein folding</a>, 
+we predict the dimensions of a paper after folding it hotdog or hamburger style!!!</p> 
+
+<hr>
+
+<h2>Upcoming Posts</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="R9cut.PNG" alt="R9 Haircut" style="width:100%">
+      <h3>Celebrity Haircuts: HOT or NOT?</h3>
+      <p>An introduction to computer vision and supervised learning to classify haircuts as hot or not.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="iWin.PNG" alt="I win you lose" style="width:100%">
+      <h3>RL Rewarding Optimal Behavior</h3>
+      <p>One may only win the game war 50% of the time but the art of heckling your opponent can be learned.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="hotdogOrHam.PNG" alt="Hotdog or Hamburger" style="width:100%">
+      <h3>It would have been a lot easier to divide by 2</h3>
+      <p>Shameless unnecessary use of ML(as is the fashion these days) to predict the dimensions of a paper after folding hamburger style.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="Arch.png" alt="Stork Architecture" style="width:100%">
+  <h3>Sample Architecture</h3>
+  <p>How do we achieve such cutting edge results? ML architecture is key of course! 
+	Here at Shallow Mind we move away from traditional industry results based approaches. 
+	We also neglect simplicity and interpretability in our architecture. 
+	Rather above all we prioritize aesthetic quality of architecture diagrams. 
+	Do we get good results and do our architectures make sense? Nope, but algorithm output doesn’t matter in the slightest. 
+	After all, since war is a 100% procedural card game which does not allow players to make a single decision it’s impossible to lose with more than a 50% probability :) 
+	</p>
+  
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
